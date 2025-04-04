@@ -11,6 +11,8 @@ import FloralMapScreen from './source/screens/FloralMapScreen';
 import FestivalScreen from './source/screens/FestivalScreen';
 import ReadFestivalScreen from './source/screens/ReadFestivalScreen';
 import FavFestivalsScreen from './source/screens/FavFestivalsScreen';
+import FloralGuideScreen from './source/screens/FloralGuideScreen';
+import ReadGuideScreen from './source/screens/ReadGuideScreen';
 
 enableScreens();
 
@@ -104,6 +106,16 @@ const App = () => {
                 <Stack.Screen 
                       name="FavFestivalsScreen" 
                       component={FavFestivalsScreen} 
+                      options={{ headerShown: false }} 
+                />
+                <Stack.Screen 
+                      name="FloralGuideScreen" 
+                      component={FloralGuideScreen} 
+                      options={{ headerShown: false }} 
+                />
+                <Stack.Screen 
+                      name="ReadGuideScreen" 
+                      component={ReadGuideScreen} 
                       options={{ headerShown: false }} 
                 />
             </Stack.Navigator>
